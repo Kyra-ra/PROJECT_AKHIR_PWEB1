@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Mercy</title>
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>H</span>otel <span>R</span>a</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#kmr">Kamar</a>
+            <a href="#review">Review</a>
+            <div class="dropdown">
+                <a href="#fasilitas" class="dropdown-toggle">Fasilitas <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#fasilitas">Petualangan Alam</a></li>
+                    <li class="dropdown">
+                        <a href="#fasilitas" class="dropdown-toggle">Kolam Renang <i class="fas fa-caret-right"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#fasilitas">Sumber Air Panas</a></li>
+                            <li class="dropdown">
+                                <a href="#fasilitas" class="dropdown-toggle">Kolam Anak & Dewasa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#fasilitas">Regular</a></li>
+                                    <li><a href="#fasilitas">Premium</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#kebugaran">Pusat Kebugaran</a></li>
+                    <li><a href="#rapat">Ruang Rapat</a></li>
+                    <li><a href="#resto">Restaurant</a></li>
+                </ul>
+            </div>
+            <a href="#book">Booking Sekarang</a>
+            <a href="#contact">Contact</a>
+        </nav>        
+        <div class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+<!-- Login Form Modal -->
+<div class="login">
+    <!-- Perbaikan pada nama kelas ikon close -->
+    <i class="fas fa-times" id="form-close"></i>
+    <!-- Tambahkan action agar formulir diarahkan ke olah.html -->
+    <form action="olah.html" method="get">
+        <h3>Login</h3>
+        <input type="username" class="box" placeholder="Enter email" required>
+        <input type="password" class="box" placeholder="Enter password" required>
+        <input type="submit" value="Login Now" id="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <p>Forgot password? <a href="lp.html">Click here</a></p>
+        <p>Don't have an account? <a href="regis.html">Register Now</a></p>
+    </form>
+</div>
+
+
+    <!--Home Section Start-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Selamat Datang di Hotel Termewah di Dunia</h3>
+            <p>Temukan tempat baru bersama kami, kemewahan menanti</p>
+            <a href="kmr" class="btn">Temukan Sekarang</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="img/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="img/vid-2.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <!--Home Section Start-->
+
+    <!--About Section Start-->
+    <section class="about" id="about">
+        <h1 class="heading">
+            <span>a</span>
+            <span>b</span>
+            <span>o</span>
+            <span>u</span>
+            <span>t</span>           
+        </h1>
+        <div class="left">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati inventore autem eligendi reiciendis quis illo. Aliquam hic sapiente alias eum commodi quisquam, repellendus doloremque consequuntur reprehenderit magnam tempora aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio hic iure. Fugit ab corrupti omnis eaque explicabo ea, autem sint. Corrupti, blanditiis distinctio assumenda sunt delectus iusto dolorem laboriosam.</p>
+          </div>
+  
+          <div class="right">
+            <img src="img/deluxe-2.jpg" alt="">
+          </div>
+  
+    </section>
+    <!--About Section end-->
+
+    <!--Kamar Section Start-->
+    <section class="kmr" id="kmr">
+        <h1 class="heading">
+            <span>k</span>
+            <span>a</span>
+            <span>m</span>
+            <span>a</span>
+            <span>r</span>
+        </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img/st-1.jpg" alt="">
+            <div class="content">
+                <h3>Kamar Standard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Lihat Selengkapnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/deluxe-1.avif" alt="">
+            <div class="content">
+                <h3>Kamar Standard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Lihat Selengkapnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/family-1.jpg" alt="">
+            <div class="content">
+                <h3>Kamar Standard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Lihat Selengkapnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/st-2.jpg" alt="">
+            <div class="content">
+                <h3>Kamar Standard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Lihat Selengkapnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/deluxe-2.jpg" alt="">
+            <div class="content">
+                <h3>Kamar Standard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Lihat Selengkapnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/family-2.jpg" alt="">
+            <div class="content">
+                <h3>Kamar Standard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Lihat Selengkapnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--Kamar Section end-->
+
+    <!--Riview secrtion start-->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/rangga.jpeg" alt="">
+                        <h3>Rangga</h3>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat cumque temporibus nesciunt suscipit.
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="stars">
+                                <i>★★★★☆</i>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/rangga.jpeg" alt="">
+                        <h3>Rangga</h3>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat cumque temporibus nesciunt suscipit.
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="stars">
+                                <i>★★★★☆</i>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/rangga.jpeg" alt="">
+                        <h3>Rangga</h3>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat cumque temporibus nesciunt suscipit.
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="stars">
+                                <i>★★★★☆</i>
+                            </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/rangga.jpeg" alt="">
+                        <h3>Rangga</h3>
+                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla fugiat cumque temporibus nesciunt suscipit.
+                        <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="stars">
+                                <i>★★★★☆</i>
+                            </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Riview secrtion end-->
+
+    <!--Fasilitas Section start-->
+    <section class="fasilitas" id="fasilitas">
+        <h1 class="heading">
+            <span>f</span>
+            <span>a</span>
+            <span>s</span>
+            <span>i</span>
+            <span>l</span>
+            <span>i</span>
+            <span>t</span>
+            <span>a</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="img/alam.webp" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Petualangan Alam</h3>
+                    <p>Lorem Ipsum is simply dumply</p>
+                    <div class="stars">
+                        <i>★★★★☆</i>
+                    </div>
+                    <a href="#" class="btn">Lihat Sekarang</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/kolam.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Kolam Renang</h3>
+                    <p>Lorem Ipsum is simply dumply</p>
+                    <div class="stars">
+                        <i>★★★★☆</i>
+                    </div>
+                    <a href="#" class="btn">Lihat Selengkapnya</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/gym.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Pusat Kebugaran</h3>
+                    <p>Lorem Ipsum is simply dumply</p>
+                    <div class="stars">
+                        <i>★★★★☆</i>
+                    </div>
+                    <a href="#" class="btn">Lihat Sekarang</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/rapat.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Ruang Rapat</h3>
+                    <p>Lorem Ipsum is simply dumply</p>
+                    <div class="stars">
+                        <i>★★★★☆</i>
+                    </div>
+                   <a href="#" class="btn">Lihat Sekarang</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/resto.jpeg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Restaurant</h3>
+                    <p>Lorem Ipsum is simply dumply</p>
+                    <div class="stars">
+                        <i>★★★★☆</i>
+                    </div>
+                    <a href="#" class="btn">Lihat Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fasilitas Section end-->
+
+<!-- Booking Section start -->
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+        <span class="space"></span>
+        <span>s</span>
+        <span>e</span>
+        <span>k</span>
+        <span>a</span>
+        <span>r</span>
+        <span>a</span>
+        <span>n</span>
+        <span>g</span>
+    </h1>
+
+    <div class="row">
+        <div class="img">
+            <img src="img/a.webp" alt="">
+        </div>
+        <!--Form Booking Start-->
+        <form action="" id="bookingForm">
+            <div class="inputBox">
+                <h3>ID Pemesan</h3>
+                <input type="number" placeholder="Masukkan ID Pemesan" id="id-pemesan" required>
+            </div>
+            <div class="inputBox">
+                <h3>Nama Pemesan</h3>
+                <input type="text" placeholder="Masukkan Nama Pemesan" id="nama-pemesan" required>
+            </div>
+            <div class="inputBox">
+                <h3>Nomor Identitas</h3>
+                <input type="text" placeholder="Masukkan Nomor Identitas" id="nomor-identitas" required>
+            </div>
+            <div class="inputBox">
+                <label for="kamar">
+                    <h3>Tipe Kamar</h3>
+                </label>
+                <select name="kamar" id="kamar" required>
+                    <option value="" disabled selected>--Pilih Kamar--</option>
+                    <option value="standard">Kamar Standard</option>
+                    <option value="deluxe">Kamar Mewah</option>
+                    <option value="family">Kamar Keluarga</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <h3>Harga</h3>
+                <input type="number" id="harga" placeholder="Masukkan Harga" required>
+            </div>
+            <div class="inputBox">
+                <h3>Tanggal Pesan</h3>
+                <input type="date" id="tanggal-pesan" placeholder="dd/mm/yyyy" required>
+            </div>
+            <div class="inputBox">
+                <h3>Durasi Menginap (malam)</h3>
+                <input type="number" id="durasi-menginap" placeholder="Masukkan Durasi Menginap" required>
+            </div>
+            <!-- Jenis Kelamin -->
+            <div class="inputBox">
+                <h3>Jenis Kelamin</h3>
+                <label>
+                    <input type="radio" name="gender" value="male" required> Laki-laki
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female" required> Perempuan
+                </label>
+            </div>
+            <!-- Termasuk Breakfast (checkbox) -->
+            <div class="inputBox">
+                <h3>Termasuk Breakfast</h3>
+                <label>
+                    <input type="checkbox" id="breakfast" name="breakfast"> Ya, termasuk sarapan
+                </label>
+            </div>
+            <div class="inputBox">
+                <h3>Total Bayar</h3>
+                <input type="number" id="total-bayar" placeholder="Masukkan Total Bayar" required readonly>
+            </div>
+            <input type="button" id="book-now" class="btn" value="Booking Sekarang">
+        </form>
+    </div>
+</section>
+
+<!-- Form Resume yang akan muncul -->
+<div id="resume">
+    <h3>Resume Pemesanan</h3>
+    <div class="resume-item">
+        <h3>Nama Pemesan:</h3>
+        <p id="resume-name"></p>
+    </div>
+    <div class="resume-item">
+        <h3>Tipe Kamar:</h3>
+        <p id="resume-room"></p>
+    </div>
+    <div class="resume-item">
+        <h3>Durasi Menginap:</h3>
+        <p id="resume-stay-duration"></p>
+    </div>
+    <div class="resume-item">
+        <h3>Sarapan:</h3>
+        <p id="resume-breakfast"></p>
+    </div>
+    <div class="resume-item">
+        <h3>Harga:</h3>
+        <p id="resume-price"></p>
+    </div>
+    <div class="resume-item">
+        <h3>Total Bayar:</h3>
+        <p id="resume-total"></p>
+    </div>
+    <button id="close-resume" class="btn">Tutup</button>
+</div>
+<!-- Booking Section end -->
+
+<!-- Contact Section start -->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="img">
+            <img src="img/contact.webp" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text"placeholder="name">
+                <input type="email"placeholder="email">
+             </div>
+             <div class="inputBox">
+                <input type="number"placeholder="number">
+                <input type="text"placeholder="subject">
+             </div>
+             <textarea placeholder="message" name="" cols="40" rows="10"></textarea>
+             <input type="sumbit" placeholder="-" class="btn" value="send message now">
+        </form>
+    </div>
+</section>
+<!-- Contact Section end -->
+
+<!-- Supporting section -->
+<section class="brand-container">
+    <div class="swiper mySwiper brand-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide"><img src="img/uniku.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/fkom.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/ti.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/uniku.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/fkom.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/ti.png" alt=""></div>
+        </div>
+    </div>
+</section>
+<!-- Supporting section -->
+
+<!-- footer section start-->
+ <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Lokasi Cabang</h3>
+            <a href="#">Indonesia</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">China</a>
+            <a href="#">Sourth Korea</a>
+            <a href="#">Singapore</a>
+            <a href="#">Jerman</a>
+        </div>
+        <div class="box">
+            <h3>Link Cepat</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Kamar</a>
+            <a href="#">Review</a>
+            <a href="#">Fasilitas</a>
+            <a href="#">Booking Sekarang</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">Instagram</a>
+            <a href="https://www.youtube.com/@count.2862">Youtube</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <h1 class="credit">Dibuat oleh <span>M Rangga T</span> | all rights reserved!!</h1>
+</section>
+<!-- footer section start-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
